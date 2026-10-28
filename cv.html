@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV – Biện Phương Vy</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+:root{--p:#E85B8B;--t:#2D2D2D;--g:#666}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Outfit,Arial,sans-serif;color:var(--t);background:#fdeef4;padding:30px 12px}
+.bar{max-width:820px;margin:0 auto 18px;display:flex;gap:10px;justify-content:flex-end}
+.bar button,.bar a{border:0;cursor:pointer;padding:11px 20px;border-radius:999px;font:600 14px Outfit,sans-serif;text-decoration:none;
+ background:linear-gradient(135deg,#E85B8B,#F65E9B);color:#fff}
+.bar a{background:#fff;color:var(--p)}
+.cv{max-width:820px;margin:auto;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(232,91,139,.18);display:grid;grid-template-columns:260px 1fr}
+aside{background:linear-gradient(180deg,#ffe3ee,#ffd0e1);padding:34px 24px}
+aside img{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;margin:0 auto 18px;border:5px solid #fff}
+aside h2,main h2{font-family:"Cormorant Garamond",serif;font-size:21px;color:var(--p);margin:22px 0 10px;border-bottom:2px solid rgba(232,91,139,.25);padding-bottom:6px}
+aside p,aside li{font-size:14px;line-height:1.7;color:#444;list-style:none}
+aside i{color:var(--p);width:20px}
+main{padding:36px 34px}
+main h1{font-family:"Cormorant Garamond",serif;font-size:40px;line-height:1}
+main .role{color:var(--p);font-weight:600;letter-spacing:.12em;font-size:13px;margin:8px 0 6px}
+main p{font-size:14.5px;line-height:1.75;color:#444}
+.item{margin-bottom:14px}.item b{display:block;font-size:15px}.item span{font-size:13px;color:var(--g)}
+.bar-row{margin:9px 0}.bar-row div{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:4px}
+.bar-row i{display:block;height:8px;border-radius:9px;background:#fde1ec;position:relative}
+.bar-row i::after{content:"";position:absolute;inset:0;width:var(--w);border-radius:9px;background:linear-gradient(90deg,#E85B8B,#F65E9B)}
+.chips span{display:inline-block;background:#fff;color:var(--p);border-radius:999px;padding:4px 12px;font-size:12.5px;margin:3px 3px 0 0;border:1px solid #ffc3d8}
+@media(max-width:700px){.cv{grid-template-columns:1fr}}
+@media print{body{background:#fff;padding:0}.bar{display:none}.cv{box-shadow:none;border-radius:0;max-width:none}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact}@page{size:A4;margin:0}}
+</style>
+</head>
+<body>
+<div class="bar"><a href="index.html"><i class="fa-solid fa-arrow-left"></i> Về trang chủ</a><button onclick="window.print()"><i class="fa-solid fa-download"></i> Lưu PDF / In</button></div>
+<div class="cv">
+ <aside>
+  <img src="image/profile-image.jpg" alt="Biện Phương Vy">
+  <h2>Liên hệ</h2>
+  <ul>
+   <li><i class="fa-solid fa-envelope"></i> vybien.100805@gmail.com</li>
+   <li><i class="fa-solid fa-phone"></i> +84 765019620</li>
+   <li><i class="fa-solid fa-location-dot"></i> Đà Nẵng, Việt Nam</li>
+   <li><i class="fa-brands fa-github"></i> github.com/BienPhuongVy</li>
+  </ul>
+  <h2>Ngôn ngữ</h2><p>Tiếng Việt<br>Tiếng Anh</p>
+  <h2>Kỹ năng mềm</h2>
+  <div class="chips"><span>Làm việc nhóm</span><span>Thích ứng</span><span>Sáng tạo</span><span>Giải quyết vấn đề</span></div>
+ </aside>
+ <main>
+  <h1>Biện Phương Vy</h1>
+  <div class="role">SINH VIÊN MẠNG &amp; AN TOÀN THÔNG TIN</div>
+  <p>Sinh viên Công nghệ thông tin, đam mê bảo mật hệ thống, server hardening và phòng thủ mạng; mục tiêu trở thành Kỹ sư Bảo mật. Thỉnh thoảng lập trình web để thực hành giao diện.</p>
+  <h2>Học vấn</h2>
+  <div class="item"><b>VKU – Đại học Công nghệ Thông tin &amp; Truyền thông Việt – Hàn</b><span>2023 – Hiện tại · Mạng &amp; An toàn thông tin (Kỹ sư)</span></div>
+  <h2>Kỹ năng chuyên môn</h2>
+  <div class="bar-row"><div><span>HTML &amp; CSS</span><b>90%</b></div><i style="--w:90%"></i></div>
+  <div class="bar-row"><div><span>Java</span><b>70%</b></div><i style="--w:70%"></i></div>
+  <div class="bar-row"><div><span>Kotlin</span><b>60%</b></div><i style="--w:60%"></i></div>
+  <div class="bar-row"><div><span>Cấu hình thiết bị mạng</span><b>60%</b></div><i style="--w:60%"></i></div>
+  <div class="bar-row"><div><span>Python</span><b>50%</b></div><i style="--w:50%"></i></div>
+  <h2>Dự án</h2>
+  <div class="item"><b>Website bán hoa</b><span>HTML5, CSS3, JavaScript, PHP – thiết kế &amp; lập trình giao diện, responsive.</span></div>
+  <div class="item"><b>Firewall Linux &amp; Samba AD</b><span>Domain Controller, Group Policy, VPN, DMZ.</span></div>
+  <div class="item"><b>Thiết kế &amp; giám sát hệ thống mạng</b><span>Mô hình Core/Distribution/Access, Zabbix, Grafana, Prometheus.</span></div>
+ </main>
+</div>
+<script>if(location.search.includes("print=1"))window.addEventListener("load",()=>setTimeout(()=>window.print(),700));</script>
+</body>
+</html>
